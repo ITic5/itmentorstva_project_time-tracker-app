@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reports</title>
+    <link rel="stylesheet" href="styles/reports.css">
+</head>
+<body>
+
+<div id="reports-wrapper">
+    <h2>Time Tracking Reports</h2>
+
+    <div id="controls-wrapper">
+
+        <label for="filter-type">Select Report Type:</label>
+        <select id="filter-type">
+            <option value="week">This Week</option>
+            <option value="month">This Month</option>
+            <option value="custom">Custom Range</option>
+        </select>
+
+        <div id="custom-date-range" class="hidden">
+            <label for="start-date">From:</label>
+            <input type="date" id="start-date">
+            <label for="end-date">To:</label>
+            <input type="date" id="end-date">
+            <button id="generate-report">Generate</button>
+        </div>
+
+    </div>
+
+
+
+    <h3>Total Tracked Time: <span id="total-hours">0</span></h3>
+
+    <div id="task-results-wrapper">
+        <h3 id="task-list">Task List:</h3>
+        <div id="report-results"></div>
+    </div>
+
+</div>
+
+<script src="src/reports.js" type="module"></script>
+
+</body>
+</html>

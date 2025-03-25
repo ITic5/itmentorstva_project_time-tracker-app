@@ -1,0 +1,5 @@
+Dodaj datum za taskove kako bi posle moglo da se generisu izvestaji za odabrano vreme.
+
+Izveštaji: Generisanje dnevnih, nedeljnih ili mesečnih izveštaja o utrošenom vremenu. (Stranica sa izvestajima)
+
+Kao bazu koristite Firebase ili LocalStorage

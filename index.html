@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="styles/styles.css">
+      <title>Time Tracking App</title>
+  </head>
+  <body>
+
+  <div id="main-wrapper">
+    <div id="menu">
+      <a href="projects.html" class="menu-item">Projects</a>
+      <a href="reports.html" class="menu-item">Reports</a>
+    </div>
+    <div id="time-tracker">
+        <div id="tracking-time-controls">
+
+            <div id="time-controls">
+                <label for="task-name-input">Task name:</label>
+                <input id="task-name-input" placeholder="Enter task name">
+
+                <label for="project-selector"></label>
+                <select id="project-selector" name="project-selector"></select>
+
+                <div id="stopwatch">
+                    00:00:00
+                </div>
+
+                <button id="start-button" type="button">START</button>
+                <button id="stop-button" class="hidden" type="button">STOP</button>
+            </div>
+
+            <div id="project-controls">
+                <label for="project-name-input">Project name:</label>
+                <input id="project-name-input" placeholder="Enter project name">
+
+                <button id="add-project-button" type="button">Add new project</button>
+            </div>
+
+        </div>
+
+
+        <div id="task-list-wrapper">
+        </div>
+
+
+    </div>
+  </div>
+
+
+  <script src="dist/script.min.js" type="module"></script>
+  </body>
+</html>
